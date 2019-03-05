@@ -1,0 +1,28 @@
+<ion-header style="background-color:#607D8B ">
+    <ion-buttons slot="start">
+                   <ion-menu-button style="background-color:#607D8B "></ion-menu-button>
+                 </ion-buttons>
+                
+         
+         
+               <!-- <ion-icon name="more"></ion-icon> -->
+         
+       
+       <ion-title>
+           My Day<br>
+           {{today | date:'fullDate'}}
+   </ion-title>
+     </ion-header>
+
+<ion-content style="background-color:#B0BEC5" padding>
+<h1>Sort</h1>
+<hr>
+<ion-icon name="swap" class="icon"></ion-icon>
+<h1 class="add">Alphabetically</h1>
+<ion-icon name="star-outline" class="icon1"></ion-icon>
+<h1 class="add">Importance</h1>
+<ion-icon name="add" class="icon1"></ion-icon>
+<h1 class="add">Creation Data</h1>
+<ion-icon name="checkbox" class="icon1"></ion-icon>
+<h1 class="add">Completed</h1>
+</ion-content>

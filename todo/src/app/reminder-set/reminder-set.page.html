@@ -1,0 +1,49 @@
+<ion-header style="background-color: #607D8B">
+ 
+    <ion-title><b>Reminder_set</b></ion-title>
+  
+</ion-header>
+
+<ion-content padding>
+    <ion-row style="width:200px;margin-left:50px;">
+        <h3>Title:</h3>
+        <br>
+    </ion-row>
+    <ion-row class="title">
+        <ion-input type="text" #title style="background-color:#B0BEC5"></ion-input>
+      </ion-row>
+
+
+      <ion-row style="width:200px;margin-left:50px;">
+          <h3>Remind me on date:</h3>
+          <br>
+      </ion-row>
+      <ion-row class="date">
+        <ion-input type="date" #date style="background-color:#B0BEC5"></ion-input>
+        </ion-row>
+      
+      
+        <ion-row style="width:200px;margin-left:50px;">
+            <h3>Remind me on Time:</h3>
+            <br>
+        </ion-row>
+        <ion-row class="time">
+            <ion-input type="time" #time style="background-color:#B0BEC5"></ion-input>
+          </ion-row>
+      
+          <ion-row style="width:200px;margin-left:50px;">
+            <ion-col>
+              <h3>Remind me on Location:</h3>
+              <br>
+            </ion-col>
+            <ion-col>
+                <ion-toggle color="primary" ></ion-toggle>
+            </ion-col>
+          </ion-row>
+</ion-content>
+
+<ion-footer>
+    <ion-button color="secondary" (click)="set(title,date,time)">Set Reminder</ion-button>
+</ion-footer>
+
+

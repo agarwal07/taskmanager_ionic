@@ -1,0 +1,44 @@
+<ion-header style="background-color:#607D8B"  >
+  
+      <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+    <ion-title><b>New List</b></ion-title>
+
+</ion-header>
+
+<ion-content  style="background-color:#B0BEC5">
+<ion-content  style="background-color:#B0BEC5">
+    <ion-row class="value" >
+        <h3>Enter List Title:</h3>
+        <br>
+    </ion-row>
+    <ion-row class="title">
+        <ion-input type="text" #title style="background-color:#D3D3D3" ></ion-input>
+      </ion-row>
+<ion-row>
+  <ion-col>
+<svg  class="circle1" height="100" width="100">
+    <circle  cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="green" />
+    Sorry, your browser does not support inline SVG.  
+  </svg> 
+</ion-col>
+<ion-col>
+    <svg  class="circle2" height="100" width="100">
+        <circle  cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="blue" />
+        Sorry, your browser does not support inline SVG.  
+      </svg> 
+    </ion-col>
+    <ion-col>
+        <svg  class="circle3" height="100" width="100">
+            <circle  cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="purple" />
+            Sorry, your browser does not support inline SVG.  
+          </svg> 
+        </ion-col>
+</ion-row>
+<ion-row>
+   <ion-button  (click)="create(title)" class="add1" >Create</ion-button>
+</ion-row>
+
+</ion-content>
+</ion-content>

@@ -1,0 +1,50 @@
+<ion-header style="background-color:#607D8B">
+    
+    <ion-title>
+      <ion-row  >
+        <ion-col >
+               <ion-icon  class="arrow"  (click)="arrow()" name="arrow-back" ></ion-icon>
+              </ion-col>
+         <ion-col class="add" >
+        Add Account
+          </ion-col>
+    </ion-row>
+</ion-title>
+  </ion-header>
+  <ion-content>
+      <ion-row class="contact">
+          <ion-input style="background-color:#B0BEC5" type="number" min="10" min="10" placeholder="Enter Contact Number" class="one" #contact></ion-input>
+        </ion-row>
+      <ion-row class="name">
+        <ion-input style="background-color:#B0BEC5" type="text" placeholder="Enter Name" class="two" #name></ion-input>
+      </ion-row>
+      <ion-row class="password">
+          <ion-input style="background-color:#B0BEC5" type="password" placeholder="Enter password" class="three" #password1 ></ion-input>
+        </ion-row>
+        <ion-row >
+            <ion-item  class="gender" >
+                <ion-label>Gender</ion-label>
+                 <ion-select #gender > 
+                  <ion-select-option value="f" >Female</ion-select-option>
+                  <ion-select-option value="m" >Male</ion-select-option>
+                 </ion-select> 
+              </ion-item>
+          </ion-row>
+  </ion-content>
+
+  <ion-footer style="background-color:#607D8B ">
+      
+        
+            <ion-row (click)="user(contact,name,password1,gender)" >
+                <ion-col class="next">
+                    <b>Next</b>
+                      </ion-col>
+                 <ion-col  >
+                
+                <ion-icon  class="arrow_for"  name="arrow-forward"></ion-icon>
+                  </ion-col>
+            </ion-row>
+           
+          
+        
+    </ion-footer >

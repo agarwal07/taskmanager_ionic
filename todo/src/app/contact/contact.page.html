@@ -1,0 +1,33 @@
+<ion-header  style="background-color:#607D8B ">
+    
+      <ion-title>
+        <ion-row  >
+          <ion-col >
+                 <ion-icon  class="value_icon"  name="arrow-back"></ion-icon>
+                
+          </ion-col>
+          <ion-col class="value_add" >
+          
+              Add Account
+            </ion-col>
+        
+        </ion-row>
+  </ion-title>
+    </ion-header>
+
+<ion-content >
+  <ion-row class="value1">
+    <ion-input style="background-color:#B0BEC5" type="number"   placeholder="Enter Contact" class="page" #contact ></ion-input>
+  </ion-row>
+  <ion-row >
+    <ion-button  (click)="goto(contact)" class="value2" right>Next
+        <ion-icon  class="value_icon" name="arrow-forward"></ion-icon>
+</ion-button>
+  </ion-row>
+  <ion-row >
+    <ion-button  (click)="details()" class="value2" right>User ADD
+        <ion-icon  class="value_icon" name="arrow-forward"></ion-icon>
+</ion-button>
+  </ion-row>
+  
+</ion-content>

@@ -1,0 +1,23 @@
+<ion-header style="background-color:#607D8B">
+  
+      <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+    <ion-title><b>Reminder</b></ion-title>
+  
+</ion-header>
+
+<ion-content style="background-color:#B0BEC5">
+  <ion-row *ngFor="let i of data1">
+      <ion-col >
+        <h2>Title:{{i.title}}</h2>
+      </ion-col>
+      <ion-col >
+          <h2>date:{{i.date}}</h2>
+        </ion-col>
+        <ion-col >
+            <h2>time:{{i.time}}</h2>
+          </ion-col>
+  </ion-row>
+  <ion-icon style="margin-top:125px;" name="add-circle" [routerLink]='"../reminder-set"'></ion-icon>
+</ion-content>
